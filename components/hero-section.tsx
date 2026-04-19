@@ -11,7 +11,11 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-muted/50 to-background" />
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/hero-construction.jpg')" }}
+      />
+      <div className="absolute inset-0 bg-black/40" />
       
       {/* Abstract Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
@@ -27,15 +31,15 @@ export function HeroSection() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-32 text-center">
         <div className="animate-fade-in-up">
-          <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-6">
+          <p className="text-sm font-medium uppercase tracking-widest text-slate-200 mb-6">
             Cajon Serrano
           </p>
           
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground text-balance max-w-4xl mx-auto leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white text-balance max-w-4xl mx-auto leading-tight">
             {t.hero.headline}
           </h1>
           
-          <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <p className="mt-6 text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto text-pretty">
             {t.hero.subheadline}
           </p>
           
@@ -55,8 +59,8 @@ export function HeroSection() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-2 bg-muted-foreground/50 rounded-full animate-pulse" />
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
+            <div className="w-1 h-2 bg-white/50 rounded-full animate-pulse" />
           </div>
         </div>
       </div>

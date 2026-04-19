@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useLanguage } from "@/lib/language-context"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
@@ -55,9 +56,16 @@ export function AboutPreview() {
             <div className="aspect-square bg-gradient-to-br from-muted to-border rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-primary mb-6">
-                    <span className="text-4xl font-bold text-primary-foreground">CS</span>
-                  </div>
+                <div className="inline-flex items-center justify-center w-75 h-75 rounded-full overflow-hidden mb-6">
+                                                <Image
+                                                  src="/ProfilBild1.1.jpeg"
+                                                  alt="Profile"
+                                                  width={128}
+                                                  height={128}
+                                                  className="object-cover w-full h-full"
+                                                />
+                                              </div>
+                  
                   <p className="text-2xl font-semibold text-foreground">Cajon Serrano</p>
                   <p className="text-muted-foreground mt-2">{t.footer.tagline}</p>
                 </div>

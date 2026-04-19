@@ -1,10 +1,12 @@
 "use client"
 
+import { useState } from "react"
+import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CTASection } from "@/components/cta-section"
 import { useLanguage } from "@/lib/language-context"
-import { Building2, Truck, Wrench, HardHat, Package, Clock } from "lucide-react"
+import { Building2, Truck, Wrench, HardHat, Package, Clock, ChevronLeft, ChevronRight } from "lucide-react"
 
 const serviceDetails = {
   construction: {
@@ -51,6 +53,17 @@ const serviceDetails = {
 
 export default function ServicesPage() {
   const { t, language } = useLanguage()
+  const [constructionImageIndex, setConstructionImageIndex] = useState(0)
+
+  const constructionImages = [  
+  "/ByggaInnevägar.jpeg",
+  "/ByggaTakjobb.jpeg",
+  "/ByggaTräddgård1.0.jpeg",
+  "/ByggaTräddgård1.1.jpeg",
+  "/ByggaUteGolv1.0.jpeg",
+  "/ByggaUteGolv1.1.jpeg",
+  "/ByggaUteGolv2.jpeg",
+  "/ByggaUtejobb.jpeg"]
 
   const pageSubtitle = {
     sv: "Vi erbjuder ett komplett utbud av bygg- och transporttjänster med fokus på svensk kvalitet och precision.",
@@ -63,15 +76,19 @@ export default function ServicesPage() {
       <Header />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-24 bg-muted/50">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-4">
+        <section
+          className="relative py-24 bg-cover bg-center overflow-hidden"
+          style={{ backgroundImage: "url('/hero-construction.jpg')" }}
+        >
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-sm font-medium uppercase tracking-widest text-slate-200 mb-4">
               Cajon Serrano
             </p>
-            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-foreground mb-6">
+            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white mb-6">
               {t.services.title}
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-slate-200 max-w-2xl mx-auto">
               {pageSubtitle[language]}
             </p>
           </div>
@@ -102,8 +119,28 @@ export default function ServicesPage() {
                   ))}
                 </ul>
               </div>
-              <div className="aspect-square bg-gradient-to-br from-muted to-border rounded-lg flex items-center justify-center">
-                <Building2 className="w-32 h-32 text-foreground/10" />
+              <div className="relative aspect-square rounded-lg overflow-hidden bg-muted flex items-center justify-center">
+                <button
+                  onClick={() => setConstructionImageIndex((prev) => (prev - 1 + constructionImages.length) % constructionImages.length)}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full transition-colors"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft className="w-6 h-6 text-black" />
+                </button>
+                <Image
+                  src={constructionImages[constructionImageIndex]}
+                  alt="Construction work"
+                  fill
+                  className="object-cover transition-all duration-500"
+                  priority
+                />
+                <button
+                  onClick={() => setConstructionImageIndex((prev) => (prev + 1) % constructionImages.length)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full transition-colors"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="w-6 h-6 text-black" />
+                </button>
               </div>
             </div>
           </div>
@@ -113,8 +150,14 @@ export default function ServicesPage() {
         <section className="py-24 bg-muted/50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 aspect-square bg-gradient-to-br from-muted to-border rounded-lg flex items-center justify-center">
-                <Truck className="w-32 h-32 text-foreground/10" />
+              <div className="order-2 lg:order-1 relative aspect-square rounded-lg overflow-hidden">
+                <Image
+                  src="/TransportPic.jpg"
+                  alt="Transport services"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
               <div className="order-1 lg:order-2">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-background mb-6">

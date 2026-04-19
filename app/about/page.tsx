@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CTASection } from "@/components/cta-section"
@@ -107,12 +108,16 @@ export default function AboutPage() {
       <Header />
       <main className="flex-1 pt-16">
         {/* Hero */}
-        <section className="py-24 bg-muted/50">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-4">
+        <section
+          className="relative py-24 bg-cover bg-center overflow-hidden"
+          style={{ backgroundImage: "url('/AboutUs.jpg')" }}
+        >
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-sm font-medium uppercase tracking-widest text-slate-200 mb-4">
               Cajon Serrano
             </p>
-            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-foreground mb-6">
+            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white mb-6">
               {t.about.title}
             </h1>
           </div>
@@ -134,13 +139,26 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="aspect-square bg-gradient-to-br from-muted to-border rounded-lg flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-primary mb-6">
-                    <span className="text-5xl font-bold text-primary-foreground">CS</span>
-                  </div>
-                  <p className="text-2xl font-semibold text-foreground">Cajon Serrano</p>
-                  <p className="text-muted-foreground mt-2">{t.footer.tagline}</p>
-                </div>
+                   <div className="aspect-square bg-gradient-to-br from-muted to-border rounded-lg flex items-center justify-center">
+                     <div className="text-center p-8">
+                             <div className="inline-flex items-center justify-center w-75 h-75 rounded-full overflow-hidden mb-6">
+                                <Image
+                                  src="/ProfilBild1.1.jpeg"
+                                  alt="Profile"
+                                  width={128}
+                                  height={128}
+                                  className="object-cover w-full h-full"
+                                />
+                              </div>
+                        <p className="text-2xl font-semibold text-foreground">
+                        Cajon Serranodasd
+                        </p>
+
+        <p className="text-muted-foreground mt-2">
+          {t.footer.tagline}
+        </p>
+      </div>
+    </div>
               </div>
             </div>
           </div>

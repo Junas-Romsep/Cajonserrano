@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { useLanguage, type Language } from "@/lib/language-context"
 import { Button } from "@/components/ui/button"
 import {
@@ -15,7 +16,7 @@ import { Menu, X, Globe } from "lucide-react"
 const languages: { code: Language; label: string; flag: string }[] = [
   { code: "sv", label: "Svenska", flag: "SE" },
   { code: "es", label: "Español", flag: "ES" },
-  { code: "en", label: "English", flag: "GB" },
+  { code: "en", label: "English", flag: "EN" },
 ]
 
 export function Header() {
@@ -37,6 +38,13 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/Logo.png"
+              alt="Cajon Serrano Logo"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+            />
             <span className="text-xl font-semibold tracking-tight text-foreground">
               Cajon Serrano
             </span>
