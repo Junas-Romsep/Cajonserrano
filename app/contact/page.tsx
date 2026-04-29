@@ -41,7 +41,7 @@ export default function ContactPage() {
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-sm font-medium uppercase tracking-widest text-white mb-4">
-              Cajon Serrano
+              Cajón Serrano
             </p>
             <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white mb-6">
               {t.contact.title}

@@ -83,17 +83,17 @@ export default function AboutPage() {
     sv: {
       title: "Vår historia",
       content:
-        "Cajon Serrano grundades med en vision att föra svensk byggkvalitet till varje projekt. Med års erfarenhet av att arbeta i Sverige har vi lärt oss vad som krävs för att leverera excellens - precision, pålitlighet och omsorg om detaljer. Idag fortsätter vi att bygga på dessa värderingar i allt vi gör.",
+        "Cajón Serrano grundades med en vision att föra svensk byggkvalitet till varje projekt. Med års erfarenhet av att arbeta i Sverige har vi lärt oss vad som krävs för att leverera excellens - precision, pålitlighet och omsorg om detaljer. Idag fortsätter vi att bygga på dessa värderingar i allt vi gör.",
     },
     es: {
       title: "Nuestra historia",
       content:
-        "Cajon Serrano fue fundada con la visión de llevar la calidad de construcción sueca a cada proyecto. Con años de experiencia trabajando en Suecia, hemos aprendido lo que se necesita para entregar excelencia: precisión, confiabilidad y atención al detalle. Hoy continuamos construyendo sobre estos valores en todo lo que hacemos.",
+        "Cajón Serrano fue fundada con la visión de llevar la calidad de construcción sueca a cada proyecto. Con años de experiencia trabajando en Suecia, hemos aprendido lo que se necesita para entregar excelencia: precisión, confiabilidad y atención al detalle. Hoy continuamos construyendo sobre estos valores en todo lo que hacemos.",
     },
     en: {
       title: "Our story",
       content:
-        "Cajon Serrano was founded with a vision to bring Swedish construction quality to every project. With years of experience working in Sweden, we have learned what it takes to deliver excellence - precision, reliability, and attention to detail. Today we continue to build on these values in everything we do.",
+        "Cajón Serrano was founded with a vision to bring Swedish construction quality to every project. With years of experience working in Sweden, we have learned what it takes to deliver excellence - precision, reliability, and attention to detail. Today we continue to build on these values in everything we do.",
     },
   }
 
@@ -115,7 +115,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-sm font-medium uppercase tracking-widest text-slate-200 mb-4">
-              Cajon Serrano
+              Cajón Serrano
             </p>
             <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white mb-6">
               {t.about.title}
@@ -151,7 +151,7 @@ export default function AboutPage() {
                                 />
                               </div>
                         <p className="text-2xl font-semibold text-foreground">
-                        Cajon Serranodasd
+                        Cajón Serrano
                         </p>
 
         <p className="text-muted-foreground mt-2">

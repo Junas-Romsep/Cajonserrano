@@ -32,7 +32,7 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-32 text-center">
         <div className="animate-fade-in-up">
           <p className="text-sm font-medium uppercase tracking-widest text-slate-200 mb-6">
-            Cajon Serrano
+            Cajón Serrano
           </p>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white text-balance max-w-4xl mx-auto leading-tight">

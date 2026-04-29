@@ -40,13 +40,13 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/Logo.png"
-              alt="Cajon Serrano Logo"
+              alt="Cajón Serrano Logo"
               width={40}
               height={40}
               className="h-10 w-auto"
             />
             <span className="text-xl font-semibold tracking-tight text-foreground">
-              Cajon Serrano
+              Cajón Serrano
             </span>
           </Link>
 

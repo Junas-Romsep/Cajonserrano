@@ -15,17 +15,22 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Cajon Serrano | Construction & Transport Services',
+  title: 'Cajón Serrano',
   description: 'Professional construction and transport services with Swedish quality standards. Operating in Sweden with excellence, precision, and attention to detail.',
-  keywords: ['construction', 'transport', 'Sweden', 'building', 'logistics', 'Cajon Serrano'],
-  authors: [{ name: 'Cajon Serrano' }],
+  keywords: ['construction', 'transport', 'Sweden', 'building', 'logistics', 'Cajón Serrano'],
+  authors: [{ name: 'Cajón Serrano' }],
+  icons: {
+    icon: '/logo.png',         
+    shortcut: '/logo.png',      
+    apple: '/logo.png',         
+  },
   openGraph: {
-    title: 'Cajon Serrano | Construction & Transport Services',
+    title: 'Cajón Serrano',
     description: 'Professional construction and transport services with Swedish quality standards.',
     url: 'https://cajonserrano.com',
-    siteName: 'Cajon Serrano',
+    siteName: 'Cajón Serrano',
     type: 'website',
-  },
+  }
 }
 
 export const viewport = {

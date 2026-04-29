@@ -70,7 +70,7 @@ const translations: Record<Language, Translations> = {
     about: {
       title: "Om oss",
       description:
-        "På Cajon Serrano har vi arbetat i Sverige i många år, ett land känt för sin excellens inom konstruktion och design. Tack vare denna erfarenhet erbjuder vi bygg- och transporttjänster med samma kvalitet, precision och uppmärksamhet på detaljer som kännetecknar Sverige. Lita på oss för att förverkliga dina projekt med en nivå av excellens som gör skillnad. Kontakta oss och upptäck kvaliteten som utmärker oss!",
+        "På Cajón Serrano har vi arbetat i Sverige i många år, ett land känt för sin excellens inom konstruktion och design. Tack vare denna erfarenhet erbjuder vi bygg- och transporttjänster med samma kvalitet, precision och uppmärksamhet på detaljer som kännetecknar Sverige. Lita på oss för att förverkliga dina projekt med en nivå av excellens som gör skillnad. Kontakta oss och upptäck kvaliteten som utmärker oss!",
     },
     services: {
       title: "Våra tjänster",
@@ -97,9 +97,9 @@ const translations: Record<Language, Translations> = {
         success: "Tack för ditt meddelande! Vi återkommer snart.",
       },
       info: {
-        phone: "+46 70 123 45 67",
-        email: "info@cajonserrano.com",
-        address: "Stockholm, Sverige",
+        phone: "+46 70 875 55 38",
+        email: "Carlosserrano@hotmail.se ",
+        address: "España, Fuengirola",
       },
     },
     footer: {
@@ -122,7 +122,7 @@ const translations: Record<Language, Translations> = {
     about: {
       title: "Sobre nosotros",
       description:
-        "En Cajon Serrano, llevamos años trabajando en Suecia, país reconocido por su excelencia en construcción y diseño. Gracias a esa experiencia, ofrecemos servicios de construcción y transporte con la misma calidad, precisión y atención al detalle que caracteriza a Suecia. Confía en nosotros para hacer realidad tus proyectos con un nivel de excelencia que marca la diferencia. ¡Contáctanos y descubre la calidad que nos distingue!",
+        "En Cajón Serrano, llevamos años trabajando en Suecia, país reconocido por su excelencia en construcción y diseño. Gracias a esa experiencia, ofrecemos servicios de construcción y transporte con la misma calidad, precisión y atención al detalle que caracteriza a Suecia. Confía en nosotros para hacer realidad tus proyectos con un nivel de excelencia que marca la diferencia. ¡Contáctanos y descubre la calidad que nos distingue!",
     },
     services: {
       title: "Nuestros servicios",
@@ -149,9 +149,9 @@ const translations: Record<Language, Translations> = {
         success: "¡Gracias por tu mensaje! Te responderemos pronto.",
       },
       info: {
-        phone: "+46 70 123 45 67",
-        email: "info@cajonserrano.com",
-        address: "Estocolmo, Suecia",
+        phone: "+34 603 115 415",
+        email: "Carlosserrano@hotmail.se",
+        address: "España, Fuengirola",
       },
     },
     footer: {
@@ -174,7 +174,7 @@ const translations: Record<Language, Translations> = {
     about: {
       title: "About us",
       description:
-        "At Cajon Serrano, we have been working in Sweden for many years, a country renowned for its excellence in construction and design. Thanks to this experience, we offer construction and transport services with the same quality, precision, and attention to detail that characterizes Sweden. Trust us to make your projects a reality with a level of excellence that makes a difference. Contact us and discover the quality that sets us apart!",
+        "At Cajón Serrano, we have been working in Sweden for many years, a country renowned for its excellence in construction and design. Thanks to this experience, we offer construction and transport services with the same quality, precision, and attention to detail that characterizes Sweden. Trust us to make your projects a reality with a level of excellence that makes a difference. Contact us and discover the quality that sets us apart!",
     },
     services: {
       title: "Our services",
@@ -201,9 +201,9 @@ const translations: Record<Language, Translations> = {
         success: "Thank you for your message! We will get back to you soon.",
       },
       info: {
-        phone: "+46 70 123 45 67",
-        email: "info@cajonserrano.com",
-        address: "Stockholm, Sweden",
+        phone: "+46 70 875 55 38",
+        email: "Carlosserrano@hotmail.se",
+        address: "España, Fuengirola",
       },
     },
     footer: {

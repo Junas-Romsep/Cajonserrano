@@ -66,7 +66,7 @@ export function AboutPreview() {
                                                 />
                                               </div>
                   
-                  <p className="text-2xl font-semibold text-foreground">Cajon Serrano</p>
+                  <p className="text-2xl font-semibold text-foreground">Cajón Serrano</p>
                   <p className="text-muted-foreground mt-2">{t.footer.tagline}</p>
                 </div>
               </div>
